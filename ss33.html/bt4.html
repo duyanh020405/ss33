@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function book (id ,name ,publishedYear,title ){
+            this.id=id
+            this.name=name
+            this.publishedYear=publishedYear
+            this.title=title
+        }
+        var Library =[
+            new book(1,"number1",1900,"list1"),
+            new book(2,"number2",1910,"list2"),
+            new book(3,"number3",1920,"list3"),
+    ]
+    var int  = prompt("nhap so 1 de in ra toan bo sach,nhap so 2 de them sach")
+    if(int==1){
+        console.log(Library)
+    }
+    else if(int==2){
+    var int2  = prompt("nhap so sach roi in")
+    for(let i = 0 ; i<int2 ; i++){
+       Library.unshift(Newbook)
+    }
+    let Newbook={
+        id :prompt("nhap id"),
+        name :prompt("nhap ten sach"),
+        publishedYear :prompt("nhap nam san xuat"),
+        title : prompt("nhap the loai"),
+
+
+    }
+}
+    console.log(Library)
+
+    </script>
+</body>
+</html>

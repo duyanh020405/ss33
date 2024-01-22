@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sp (id , name , sprice){
+            this.id = id
+            this.name=name
+            this.sprice=sprice
+        }
+        var cacSanPham =[
+            new sp(4,"San pham 1",100000),
+            new sp(1,"San pham 1",10000),
+            new sp(2,"San pham 2",20000),
+            new sp(3,"San pham 3",30000),
+    ]
+    cacSanPham.sort(function(a,b)
+    {
+        return a.sprice - b.sprice;
+    });
+    console.log(cacSanPham)
+
+    </script>
+</body>
+</html>

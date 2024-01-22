@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product ={
+    id : prompt("nhap so id :"),
+    name : prompt("nhap ten :"),
+    email: prompt("nhap email :"),
+    password : prompt("nhap password :"),      
+}
+if(product.name.length>3 && product.email.length>0 && product.password.length>=8){
+    if(product.password.endsWith === "@gmail.com"){
+        console.log(product)
+    }
+    else{
+    console.log("khong hop le")
+}
+
+}
+else{
+    console.log("khong hop le")
+}
+
+
+
+    </script>
+</body>
+</html>
